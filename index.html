@@ -75,24 +75,6 @@
             color: #333;
         }
         
-        button {
-            background-color: rgb(49, 224, 14);
-            border: none;
-            color: white;
-            padding: 1em;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 1em 0;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-        
-        button:hover {
-            background-color: rgb(49, 224, 14);
-        }
-        
         .content {
             display: flex;
             justify-content: space-around;
@@ -124,7 +106,7 @@
             width: 50%;
         }
         
-        .frame img{
+        .frame img {
             max-width: 100%;
             height: auto;
             border-radius: 25px;
@@ -136,7 +118,34 @@
             text-align: center;
             padding: 1em 0;
         }
-        
+
+        .about-content {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            height: auto;
+            padding: 2em 0;
+        }
+
+        .about-frame {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 2em;
+            text-align: center;
+            max-width: 800px;
+        }
+
+        .about-frame img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1em;
+        }
+
+        .about-frame p {
+            text-align: justify;
+        }
     </style>
 <body>
     <header>
@@ -145,13 +154,14 @@
         <h5>APA SEBETULNYA YANG DISAJIKAN DI OBJEK WISATA CURUG CIPEUTEY MAJALENGKA INI SEHINGGA BEGITU MEMIKAT HATI PARA WISATAWAN? YUK KITA SIMAK ULASAN LENGKAPNYA!.</h5>
         <nav>
             <ul>
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Tentang</a></li>
-                <li><a href="#">Galeri</a></li>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#contact">Kontak</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <!-- Home Section -->
         <section id="home">
             <h2>Beranda</h2>
             <div class="content-video">
@@ -168,9 +178,22 @@
                     <p>Nikmati keindahan dari curug!</p>
                 </div>
                 <div class="frame">
-                    <img src="https://www.nativeindonesia.com/foto/2020/10/Camping-Di-Curug-Cipeuteuy-Majalengka.jpg" alt="Wisata Kuliner">
+                    <img src="https://www.nativeindonesia.com/foto/2020/10/Camping-Di-Curug-Cipeuteuy-Majalengka.jpg" alt="Wisata Perkemahan">
                     <h3>Kawasan Perkemahan</h3>
                     <p>Nikmati tempat Perkemahan yang sangat indah!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>Tentang</h2>
+            <div class="about-content">
+                <div class="about-frame">
+                    <img src="https://www.nativeindonesia.com/foto/2020/10/Curug-Cipeuteuy-Majalengka-Jawa-Barat.jpg" alt="About">
+                    <p>Curug Cipeuteuy merupakan salah satu wisata Majalengka yang sangat terkenal karena selalu menjadi destinasi pilihan wisatawan saat liburan tiba. Curug Majalengka satu ini berada dikawasan Gunung Ciremai yang menawarkan keindahan air terjun alaminya.</p> 
+                    <p>Dalam bahasa Sunda kata “peuteuy” sama dengan “pete” dalam bahasa Indonesia. Dahulu lokasi ini banyak ditanami pohon pete atau “Tangkal Peuteuy” , sehingga nama dari curug atau air terjun tersebut bernama Curug Cipeuteuy.</p>
+                    <p>Selama diperjalanan menuju lokasi wisat air tersebut anda akan dimanjakan dengan suara kicauan burung, udara yang sejuk dan pemandangan alam. Meski harus menempuh beberapa jalan setapak yang cukup lama, namun semuanya akan terbayarkan setelah anda sampai di air terjunnya.</p>
                 </div>
             </div>
         </section>
